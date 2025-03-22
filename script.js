@@ -1,6 +1,7 @@
 let notStartedL = []
 let inProgressL = []
 let CompletedL = []
+//The arrays in which the list are stored
 
 
 function addTask() {
