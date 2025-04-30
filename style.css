@@ -1,32 +1,106 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: #121212; */
 }
 
 #inputText {
-    width: 200px;
-    height: 15px;
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#inputHeading {
+    margin-left: 10px;
 }
 
 #submitButton {
-    width: 75px;
-    height: 30px;
+    width: 100px;
+    height: 50px;
     margin-left: 60px;
     margin-top: 5px;
+    font-size: large;
+    font-family: 'Lato', sans-serif;
+    background-color: #219ebc;
+    cursor: pointer;
+    
 }
+
+#notStartedHeading, #inProgressHeading, #completedHeading {
+    font-size: x-large;
+    -webkit-text-stroke: 1.1px;
+    -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+}
+
+
+/* #NotStarted, #InProgress, #Completed {
+} */
+
+#divNotStarted {
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    box-sizing: border-box;
+}
+
+#divInProgress {
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+
+#divCompleted {
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 72%;
+}
+
 
 ul {
     list-style-type: none;
-    padding-left: 25px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #3b3b3b;
 }
 
-.panel_not-started {
-    color: red;
+li {
+    list-style-type: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+
 }
 
-.panel_in-progress {
-    color: yellow;
+.panel_not-started, .panel_in-progress, .panel_completed {
+    display: inline-block;
+    border: 1px solid black;
+    padding-top: 2px;         /* Minimal space above text */
+    padding-bottom: 12px;     /* Extra space below text */
+    padding-left: 10px;       /* Optional horizontal spacing */
+    padding-right: 10px;
+    line-height: 1.2;         /* Controls vertical text spacing */
+    vertical-align: top; 
 }
 
-.panel_completed {
-    color: green;
+
+#notStartedHeading {
+    color: #cc3232;
+}
+
+#inProgressHeading {
+    color: #e7b416;
+}
+
+#completedHeading {
+    color: #00ab66;
+}
+
+#addTasks {
+    margin-top: 40%;
+    font-size: x-large;
 }

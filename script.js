@@ -112,9 +112,15 @@ completedList.addEventListener("drop", function(e) {
 
 
 
-function buttonPressed(event) {
+function submitInput(event) {
     event.preventDefault();
     let input = document.getElementById("inputText").value;
+    
+    if (input == '' || input == ' ' || input == null) {
+        alert("Input is empty")
+        return;
+    }
+    
     NotStarted.push(input)
 
     console.log(NotStarted)
@@ -126,5 +132,7 @@ function buttonPressed(event) {
     document.getElementById("inputText").value = '';
 }
 
-button.addEventListener('click', buttonPressed);
+const form = document.querySelector('form');
+form.addEventListener('submit', submitInput);
+button.addEventListener('click', submitInput);
 
