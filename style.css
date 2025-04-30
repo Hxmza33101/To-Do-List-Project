@@ -1,0 +1,32 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inputText {
+    width: 200px;
+    height: 15px;
+}
+
+#submitButton {
+    width: 75px;
+    height: 30px;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.panel_not-started {
+    color: red;
+}
+
+.panel_in-progress {
+    color: yellow;
+}
+
+.panel_completed {
+    color: green;
+}
