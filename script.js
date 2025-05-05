@@ -16,30 +16,18 @@ let renderList = function() {
 
     NotStarted.forEach(item => {
         const li = document.createElement('li');
-        li.setAttribute("draggable", "true");
-        li.addEventListener("dragstart", function(e){
-            e.dataTransfer.setData("text/plain", item);
-        })
         li.textContent = item;
         notStartedList.appendChild(li);
     })
 
     InProgress.forEach(item => {
         const li = document.createElement('li');
-        li.setAttribute("draggable", "true");
-        li.addEventListener("dragstart", function(e){
-            e.dataTransfer.setData("text/plain", item);
-        })
         li.textContent = item;
         inProgressList.appendChild(li);
     })
 
     Completed.forEach(item => {
         const li = document.createElement('li');
-        li.setAttribute("draggable", "true");
-        li.addEventListener("dragstart", function(e){
-            e.dataTransfer.setData("text/plain", item);
-        })
         li.textContent = item;
         completedList.appendChild(li);
     })
