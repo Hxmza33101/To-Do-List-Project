@@ -3,29 +3,6 @@
     /* background: #121212; */
 }
 
-#inputText {
-    width: 300px;
-    height: 30px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#inputHeading {
-    margin-left: 10px;
-}
-
-#submitButton {
-    width: 100px;
-    height: 50px;
-    margin-left: 60px;
-    margin-top: 5px;
-    font-size: large;
-    font-family: 'Lato', sans-serif;
-    background-color: #219ebc;
-    cursor: pointer;
-    
-}
-
 #notStartedHeading, #inProgressHeading, #completedHeading {
     font-size: x-large;
     -webkit-text-stroke: 1.1px;
@@ -33,27 +10,38 @@
     text-transform: uppercase;
 }
 
+.to-do-panels {
+    margin-top: 100px;
+}
 
-/* #NotStarted, #InProgress, #Completed {
-} */
+.NotStartedUL :hover, .InProgressUL :hover, .CompletedUL :hover li{
+    border: 2px solid #3B82F6;
+    position: relative;
+    
+    content: '';
+    background-image: url('/Users/hkmughal/Documents/Professional/Coding/Projects/To-Do-List-Project/Media/image-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
 
 #divNotStarted {
     margin-top: 0;
     position: absolute;
-    top: 0;
+    top: 5%;
     left: 10%;
     box-sizing: border-box;
 }
 
 #divInProgress {
-    margin-top: 0;
+    margin-top: 5%;
     position: absolute;
     top: 0;
     left: 40%;
 }
 
 #divCompleted {
-    margin-top: 0;
+    margin-top: 5%;
     position: absolute;
     top: 0;
     left: 72%;
@@ -79,11 +67,9 @@ li {
 .panel_not-started, .panel_in-progress, .panel_completed {
     display: inline-block;
     border: 1px solid black;
-    padding-top: 2px;         /* Minimal space above text */
-    padding-bottom: 12px;     /* Extra space below text */
     padding-left: 10px;       /* Optional horizontal spacing */
     padding-right: 10px;
-    line-height: 1.2;         /* Controls vertical text spacing */
+    height: 600px;
     vertical-align: top; 
 }
 
@@ -101,6 +87,36 @@ li {
 }
 
 #addTasks {
-    margin-top: 40%;
-    font-size: x-large;
+    margin-top: 73%;
+    margin-left: 15%;
+}
+
+#inputText {
+    width: 320px;
+    height: 35px;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+#inputHeading {
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+/* #submitSection{
+    margin-top: 100px;
+} */
+
+#submitButton {
+    width: 100px;
+    height: 50px;
+    margin-left: 80px;
+    margin-top: 5px;
+    font-size: large;
+    font-family: 'Lato', sans-serif;
+    background-color: #219ebc;
+    cursor: pointer;
+    
 }
