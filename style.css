@@ -3,10 +3,11 @@
     /* background: #121212; */
 }
 
+
+/** THE STYLING FOR ALL THE MAIN ELEMENTS */
 #notStartedHeading, #inProgressHeading, #completedHeading {
-    font-size: x-large;
-    -webkit-text-stroke: 1.1px;
-    -webkit-text-stroke-color: black;
+    /*? Makes all the headings uppercase and adjusts the size */
+    font-size: 25px;
     text-transform: uppercase;
 }
 
@@ -44,7 +45,7 @@
     margin-top: 5%;
     position: absolute;
     top: 0;
-    left: 72%;
+    left: 70%;
 }
 
 
@@ -65,25 +66,37 @@ li {
 }
 
 .panel_not-started, .panel_in-progress, .panel_completed {
+    /*? The code that makes the border around each section */
     display: inline-block;
     border: 1px solid black;
-    padding-left: 10px;       /* Optional horizontal spacing */
-    padding-right: 10px;
+    border-radius: 25px;
+    padding-inline: 20px;
+    background-color: rgba(205, 205, 205, 0.201);
     height: 600px;
+    width: 250px;
     vertical-align: top; 
 }
 
 
 #notStartedHeading {
+    /*? Makes the Not Started Heading red and adds a stroke */
     color: #cc3232;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: #950404;
 }
 
 #inProgressHeading {
-    color: #e7b416;
+    /*? Makes the In Progress Heading yellow and adds a stroke */
+    color: #e9b416;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: #aa8209;
 }
 
 #completedHeading {
+    /*? Makes the Completed Heading green and adds a stroke */
     color: #00ab66;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: #027d4c;
 }
 
 #addTasks {
@@ -97,12 +110,18 @@ li {
     margin-top: 5px;
     margin-left: 30px;
     font-size: 20px;
-    border: 2px solid black;
+    border: 2px solid gray;
 }
+
+
 
 #inputHeading {
     margin-left: 50px;
     font-size: 30px;
+}
+
+#notStartedInput {
+    visibility: hidden;
 }
 
 /* #submitSection{
@@ -110,13 +129,14 @@ li {
 } */
 
 #submitButton {
+    /*! Styling for the submit button at the bottom */
     width: 100px;
-    height: 50px;
+    height: 40px;
     margin-left: 80px;
     margin-top: 5px;
-    font-size: large;
+    font-size: 20px;
     font-family: 'Lato', sans-serif;
-    background-color: #219ebc;
+    background-color: #21b9bc;
+    border: 1.5px solid black;
     cursor: pointer;
-    
 }
