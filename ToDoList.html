@@ -14,20 +14,32 @@
             <ul class="NotStartedUL" id="NotStarted"></ul> 
             
                 <div id="notStartedSubmit">
-                <button type="button" id="notStartedButton"> Add Item</button>
-                <input type="text" name="Tasks" id="notStartedInput"> 
+                <button onclick="showInput('not-started')" type="button" id="notStartedButton"> Add Item</button>
+                <input type="text" class="task-input" name="Tasks" id="notStartedInput" style="display:none;" onkeypress="handleKey(event, 'not-started')"> 
                 </div>
         </div>
 
         <div class="panel_in-progress" id="divInProgress">
             <h5 id="inProgressHeading">In Progress</h5>
             <ul class="InProgressUL" id="InProgress"></ul>
+
+                <div id="inProgressSubmit">
+                <button type="button" id="inProgressButton"> Add Item</button>
+                <input type="text" name="Tasks" id="inProgressInput"> 
+                </div>
+
         </div>
             
 
         <div class="panel_completed" id="divCompleted">
             <h5 id="completedHeading">Completed</h5>
             <ul class="CompletedUL" id="Completed"></ul>
+
+            <div id="CompletedSubmit">
+                <button type="button" id="CompletedButton"> Add Item</button>
+                <input type="text" name="Tasks" id="CompletedInput"> 
+                </div>
+
         </div>
 
     </div>

@@ -9,6 +9,31 @@ const inProgressList = document.getElementById('InProgress')
 const completedList = document.getElementById('Completed')
 
 
+function showInput(columnId) {
+    const column = document.getElementById(columnId);
+    const input = column.querySelector(".task-input");
+    input.style.display = "inline";
+    input.focus();
+}
+
+function handleKey(event, columnId) {
+    if (event.key === "Enter") {
+        const input = event.target;
+        const task = input.value.trim();
+
+        if (task) {
+            const taskElement = document.createElement("div");
+            taskElement.textContent = task;
+            taskElement.classList.add("task-item");
+
+            document.getElementById(columnId).appendChild(taskElement);
+        }
+
+        input.value = "";
+        input.style.display = "none";
+    }
+}
+
 let renderList = function() {
     notStartedList.innerHTML = '';
     inProgressList.innerHTML = '';

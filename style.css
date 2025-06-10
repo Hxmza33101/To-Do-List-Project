@@ -72,7 +72,7 @@ li {
     border-radius: 25px;
     padding-inline: 20px;
     background-color: rgba(205, 205, 205, 0.201);
-    height: 600px;
+    height: 400px;
     width: 250px;
     vertical-align: top; 
 }
@@ -100,7 +100,7 @@ li {
 }
 
 #addTasks {
-    margin-top: 73%;
+    margin-top: 50%;
     margin-left: 15%;
 }
 
